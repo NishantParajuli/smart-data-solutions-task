@@ -1,0 +1,10 @@
+{
+  "profile": "D",
+  "name": "Document-aware + hybrid",
+  "questions": 11,
+  "hit_at_5": 0.7273,
+  "recall_at_5": 0.6818,
+  "complete_evidence_at_5": 0.6364,
+  "reciprocal_rank": 0.5455,
+  "mean_retrieval_latency_ms": 13.3
+}

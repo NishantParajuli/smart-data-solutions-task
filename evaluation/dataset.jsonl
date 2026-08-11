@@ -1,0 +1,13 @@
+{"id":"q01","question":"What were Apple's total net sales for the three months ended June 25, 2022?","category":"table","required_evidence":["operations"]}
+{"id":"q02","question":"What were Apple's inventories on June 25, 2022 and September 25, 2021?","category":"table","required_evidence":["balance_sheet"]}
+{"id":"q03","question":"How much cash did Apple generate from operating activities during the nine months ended June 25, 2022?","category":"table","required_evidence":["cash_flows"]}
+{"id":"q04","question":"By how much did Services net sales grow in the third quarter of 2022 compared with the third quarter of 2021?","category":"calculation","required_evidence":["product_sales"]}
+{"id":"q05","question":"What were Apple's Products and Services gross margin percentages in the third quarter of 2022?","category":"table","required_evidence":["gross_margin"]}
+{"id":"q06","question":"Which reportable segment had the highest net sales in the third quarter of 2022?","category":"table","required_evidence":["segment_sales"]}
+{"id":"q07","question":"How did Japan net sales change in the third quarter of 2022, and what reasons did Apple give?","category":"multi_evidence","required_evidence":["segment_sales","japan_drivers"]}
+{"id":"q08","question":"What drove the year-over-year increase in Services net sales during the third quarter of 2022?","category":"narrative","required_evidence":["services_drivers"]}
+{"id":"q09","question":"What factors drove growth in research and development expense?","category":"narrative","required_evidence":["research_development"]}
+{"id":"q10","question":"What manufacturing purchase obligations did Apple have, and how much was payable within 12 months?","category":"narrative","required_evidence":["manufacturing_obligations"]}
+{"id":"q11","question":"How much deferred revenue did Apple report, and when did it expect to realize it?","category":"narrative","required_evidence":["deferred_revenue"]}
+{"id":"q12","question":"How many employees did Apple have at the end of the third quarter of 2022?","category":"unanswerable","required_evidence":[]}
+

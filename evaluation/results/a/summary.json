@@ -1,0 +1,10 @@
+{
+  "profile": "A",
+  "name": "Fixed + dense",
+  "questions": 11,
+  "hit_at_5": 0.6364,
+  "recall_at_5": 0.5909,
+  "complete_evidence_at_5": 0.5455,
+  "reciprocal_rank": 0.5758,
+  "mean_retrieval_latency_ms": 11.77
+}

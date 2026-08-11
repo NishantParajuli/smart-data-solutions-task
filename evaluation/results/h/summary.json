@@ -1,0 +1,10 @@
+{
+  "profile": "H",
+  "name": "Parent-child + hybrid",
+  "questions": 11,
+  "hit_at_5": 0.9091,
+  "recall_at_5": 0.8636,
+  "complete_evidence_at_5": 0.8182,
+  "reciprocal_rank": 0.8364,
+  "mean_retrieval_latency_ms": 14.88
+}

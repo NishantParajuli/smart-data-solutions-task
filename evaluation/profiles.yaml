@@ -1,0 +1,47 @@
+profiles:
+  A:
+    name: Fixed + dense
+    chunker: fixed
+    retrieval: dense
+    reranker: false
+  B:
+    name: Fixed + hybrid
+    chunker: fixed
+    retrieval: hybrid
+    reranker: false
+  C:
+    name: Document-aware + dense
+    chunker: document_aware
+    retrieval: dense
+    reranker: false
+  D:
+    name: Document-aware + hybrid
+    chunker: document_aware
+    retrieval: hybrid
+    reranker: false
+  E:
+    name: Semantic + dense
+    chunker: semantic
+    retrieval: dense
+    reranker: false
+  F:
+    name: Semantic + hybrid
+    chunker: semantic
+    retrieval: hybrid
+    reranker: false
+  G:
+    name: Parent-child + dense
+    chunker: parent_child
+    retrieval: dense
+    reranker: false
+  H:
+    name: Parent-child + hybrid
+    chunker: parent_child
+    retrieval: hybrid
+    reranker: false
+  I:
+    name: Parent-child + hybrid + reranker
+    chunker: parent_child
+    retrieval: hybrid
+    reranker: true
+
