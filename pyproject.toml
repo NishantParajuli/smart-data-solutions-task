@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "apple-filing-rag"
+version = "0.1.0"
+description = "Evidence-first RAG for Apple's 2022 Q3 Form 10-Q"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "aiomysql>=0.2,<1",
+  "fastapi>=0.115,<1",
+  "fastembed>=0.6,<1",
+  "google-genai>=1.30,<2",
+  "httpx>=0.28,<1",
+  "numpy>=2,<3",
+  "pydantic>=2.10,<3",
+  "pydantic-settings>=2.7,<3",
+  "pymupdf>=1.25,<2",
+  "qdrant-client>=1.15,<2",
+  "sqlalchemy[asyncio]>=2.0.36,<3",
+  "uvicorn[standard]>=0.34,<1",
+  "PyYAML>=6,<7",
+]
+
+[project.optional-dependencies]
+ingestion = ["docling>=2.40,<3", "torch==2.7.1", "torchvision==0.22.1"]
+rerank = ["sentence-transformers>=3.4,<6"]
+dev = ["pytest>=8.3,<9", "pytest-asyncio>=0.25,<2", "ruff>=0.9,<1"]
+
+[project.scripts]
+filing-rag = "app.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["backend/app"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "ASYNC"]
+ignore = ["B008"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["backend", "."]
+testpaths = ["backend/tests", "evaluation"]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+torchvision = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
