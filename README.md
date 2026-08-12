@@ -6,6 +6,7 @@ financial tables, and extracted figures while showing the filing evidence behind
 every supported answer.
 
 **Live demo:** [https://demo.nishantparajuli.com.np/](https://demo.nishantparajuli.com.np/)
+
 (It is locally hosted so it maybe subject to powercuts and internet disruptions)
 
 The repository is deliberately sized for review: the normal path is one parser,
