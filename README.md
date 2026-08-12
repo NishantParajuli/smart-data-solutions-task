@@ -5,6 +5,8 @@ for Apple's 2022 Q3 Form 10-Q. It answers questions about narrative text,
 financial tables, and extracted figures while showing the filing evidence behind
 every supported answer.
 
+**Live demo:** [https://demo.nishantparajuli.com.np/](https://demo.nishantparajuli.com.np/)
+
 The repository is deliberately sized for review: the normal path is one parser,
 four understandable chunking choices, one MySQL schema, one Qdrant adapter, four
 API routes, and one focused web interface.
